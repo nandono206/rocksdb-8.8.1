@@ -1,0 +1,1 @@
+cmake-build-debug/db_bench --compression_type=none --duration=60 --benchmarks="readrandom" --trace_file="/tmp/op_trace_file"

@@ -1,0 +1,68 @@
+Set seed to 1726764720052043 because --seed was 0
+Initializing RocksDB Options from the specified file
+Initializing RocksDB Options from command-line flags
+Integrated BlobDB: blob cache disabled
+Keys:       16 bytes each (+ 0 bytes user-defined timestamp)
+Values:     100 bytes each (50 bytes after compression)
+Entries:    3000000000
+Prefix:    0 bytes
+Keys per prefix:    0
+RawSize:    331878.7 MB (estimated)
+FileSize:   188827.5 MB (estimated)
+Write rate: 0 bytes/second
+Read rate: 0 ops/second
+Compression: NoCompression
+Compression sampling rate: 0
+Memtablerep: SkipListFactory
+Perf Level: 1
+WARNING: Optimization is disabled: benchmarks unnecessarily slow
+WARNING: Assertions are enabled; benchmarks unnecessarily slow
+------------------------------------------------
+DB path: [/tmp/readrandom_db]
+Tracing the workload to: [/tmp/op_trace_file]
+mixgraph     :     126.531 micros/op 7903 ops/sec 1000.228 seconds 7904999 operations;    0.0 MB/s ( Gets:3952927 Puts:3952072 Seek:0, reads 20590 in 3952927 found, avg size: 36.4 value, -nan scan)
+
+Microseconds per read:
+Count: 3952927 Average: 198.9649  StdDev: 191.43
+Min: 7  Median: 122.0197  Max: 9261
+Percentiles: P50: 122.02 P75: 374.58 P99: 577.50 P99.9: 848.10 P99.99: 3038.69
+------------------------------------------------------
+(       6,      10 ]    53423   1.351%   1.351% 
+(      10,      15 ]   328778   8.317%   9.669% ##
+(      15,      22 ]   231614   5.859%  15.528% #
+(      22,      34 ]   333375   8.434%  23.962% ##
+(      34,      51 ]   373875   9.458%  33.420% ##
+(      51,      76 ]   541469  13.698%  47.118% ###
+(      76,     110 ]    61145   1.547%  48.665% 
+(     110,     170 ]   263490   6.666%  55.330% #
+(     170,     250 ]   247324   6.257%  61.587% #
+(     250,     380 ]   553266  13.996%  75.583% ###
+(     380,     580 ]   937366  23.713%  99.297% #####
+(     580,     870 ]    25797   0.653%  99.949% 
+(     870,    1300 ]      459   0.012%  99.961% 
+(    1300,    1900 ]      345   0.009%  99.970% 
+(    1900,    2900 ]      769   0.019%  99.989% 
+(    2900,    4400 ]      397   0.010%  99.999% 
+(    4400,    6600 ]       31   0.001% 100.000% 
+(    6600,    9900 ]        4   0.000% 100.000% 
+
+Microseconds per write:
+Count: 3952072 Average: 54.0816  StdDev: 14.08
+Min: 33  Median: 50.3677  Max: 5004
+Percentiles: P50: 50.37 P75: 63.55 P99: 94.89 P99.9: 109.96 P99.99: 362.56
+------------------------------------------------------
+(      22,      34 ]        4   0.000%   0.000% 
+(      34,      51 ]  2052371  51.932%  51.932% ##########
+(      51,      76 ]  1815616  45.941%  97.872% #########
+(      76,     110 ]    80213   2.030%  99.902% 
+(     110,     170 ]     3431   0.087%  99.989% 
+(     170,     250 ]       34   0.001%  99.990% 
+(     250,     380 ]        9   0.000%  99.990% 
+(     380,     580 ]        6   0.000%  99.990% 
+(     580,     870 ]      332   0.008%  99.999% 
+(     870,    1300 ]       41   0.001% 100.000% 
+(    1300,    1900 ]        7   0.000% 100.000% 
+(    1900,    2900 ]        4   0.000% 100.000% 
+(    2900,    4400 ]        3   0.000% 100.000% 
+(    4400,    6600 ]        1   0.000% 100.000% 
+
